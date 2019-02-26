@@ -1,0 +1,5 @@
+<stacklayout class="contenerdor-principal">
+    <TextField hint="Nombre" [(ngModel)]="loginUsuario.nombre" class="input-rounded"></TextField>
+    <TextField hint="Contraseña" secure="true" [(ngModel)]="loginUsuario.pass" class="input-rounded"></TextField>
+    <button class="basic-button" text="Iniciar sesion" (tap)="iniciaSesion()" class="basic-button"></button>
+</stacklayout>

@@ -1,0 +1,7 @@
+<stacklayout class="contenerdor-principal">
+        <stacklayout>
+            <TextField hint="Mensaje" [(ngModel)]="publicacion.message" class="input-rounded"></TextField>
+            <!--<TextField hint="Contraseña" secure="true" [(ngModel)]="user.pass"></TextField>-->
+            <button class="basic-button" text="Subir publicacion" (tap)="uploadPublication()"></button>
+        </stacklayout>
+</stacklayout>

@@ -1,0 +1,12 @@
+<stacklayout class="contenerdor-principal">
+    <stacklayout>
+        <TextField hint="Nombre" [(ngModel)]="user.nombre" class="input-rounded"></TextField>
+        <TextField hint="Contraseña" secure="true" [(ngModel)]="user.pass" class="input-rounded"></TextField>
+        <TextView hint="Descripción" [(ngModel)]="user.about" editable="true" class="input-rounded"></TextView>
+        <button class="basic-button" text="Modificar Datos" (tap)="updateUser()"></button>
+    </stacklayout>
+    <stacklayout class="bottom">
+        <button class="basic-button" text="Cerrar sesion" (tap)="closeSession()"></button>
+        <button class="basic-button" text="Borrar cuenta" (tap)="eliminarUsuario()"></button>
+    </stacklayout>
+</stacklayout>

@@ -1,0 +1,11 @@
+<stacklayout class="contenerdor-principal">
+    <stacklayout>
+        <TextField hint="Nombre" [(ngModel)]="nuevoUsuario.nombre" class="input-rounded"></TextField>
+        <TextField hint="Contraseña" secure="true" [(ngModel)]="nuevoUsuario.pass" class="input-rounded"></TextField>
+        <TextView hint="Descripción" [(ngModel)]="nuevoUsuario.about" editable="true" class="input-rounded"></TextView>
+        <button class="basic-button" text="Registrarse" (tap)="registrarse()"></button>
+    </stacklayout>
+    <stacklayout class="bottom">
+        <button class="basic-button" [nsRouterLink]="['/loggin']" text="Inicia sesion !!"></button>
+    </stacklayout>
+</stacklayout>

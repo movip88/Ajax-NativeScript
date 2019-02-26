@@ -1,0 +1,9 @@
+<ScrollView orientation="vertical">
+    <stacklayout>
+        <stacklayout *ngFor="let publication of publicaciones;">
+            <label text="User: {{publication.user.nombre}}"></label>
+            <label text="Message: {{publication.message}}"></label>
+            <label text="Image: {{publication.image}}"></label>
+        </stacklayout>
+    </stacklayout>
+</ScrollView>
